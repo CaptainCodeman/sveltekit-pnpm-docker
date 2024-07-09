@@ -1,0 +1,1 @@
+Example repo for [article on SvelteKit + Docker + pnpm mono-repo](https://www.captaincodeman.com/build-a-docker-container-from-a-pnpm-monorepo)
