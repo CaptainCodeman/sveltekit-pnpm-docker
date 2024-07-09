@@ -6,7 +6,8 @@ RUN corepack enable
 WORKDIR /app
 COPY . .
 
-RUN --mount=type=cache,id=pnpm,target=/pnpm/store pnpm install --frozen-lockfile
+RUN --mount=type=cache,id=pnpm,target=/pnpm/store \
+    pnpm install --frozen-lockfile
 RUN pnpm run -r build
 RUN pnpm deploy --filter=web --prod out
 
